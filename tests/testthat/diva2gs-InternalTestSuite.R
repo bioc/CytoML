@@ -1,3 +1,4 @@
+library(data.table)
 context("diva parser ")
 
 path <- "~/rglab/workspace/flowWorkspace/wsTestSuite/diva"

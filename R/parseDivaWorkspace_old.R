@@ -65,8 +65,8 @@
     sampleName <- basename(file)
 
     #get tube node
-    xpathSample <- paste0(xpathGroup, "/tube[data_filename='", sampleName, "']")
-    sampleNode <- xpathApply(rootDoc, xpathSample)[[1]]
+     xpathSample <- paste0(xpathGroup, "/tube[data_filename='", sampleName, "']")
+     sampleNode <- xpathApply(rootDoc, xpathSample)[[1]]
 
     # get comp & param for biexp
     biexp_para <- new.env(parent = emptyenv())
@@ -149,8 +149,8 @@
     gh <- gs[[sn]]
 
     this_biexp <- translist[[sn]]
-    xpathSample <- paste0(xpathGroup, "/tube[data_filename='", sampleName, "']")
-    sampleNode <- xpathApply(rootDoc, xpathSample)[[1]]
+   xpathSample <- paste0(xpathGroup, "/tube[data_filename='", sn, "']")
+   sampleNode <- xpathApply(rootDoc, xpathSample)[[1]]
     #assume the gates listed in xml follows the topological order
     rootNode.xml <- NULL
     gateNodes <- xpathApply(sampleNode, "gates/gate")

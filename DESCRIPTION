@@ -11,8 +11,8 @@ License: Artistic-2.0
 LazyData: TRUE
 Imports:
     flowCore (>= 1.43.10),
-    flowWorkspace (>= 3.28.1),
-    openCyto (>= 1.11.3),
+   flowWorkspace (>= 3.28.1),
+   openCyto (>= 1.11.3),
     XML,
     data.table,
     flowUtils (>= 1.35.7),
@@ -27,12 +27,15 @@ Imports:
     utils,
     base64enc,
     plyr,
-    ggcyto (>= 1.7.1)
+    grDevices,
+    methods,
+    ggcyto (>= 1.9.3)
 biocViews: FlowCytometry, DataImport, DataRepresentation
 Suggests:
     testthat,
     flowWorkspaceData (>= 2.11.1),
-    knitr
+    knitr,
+    parallel
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
 Collate: 
