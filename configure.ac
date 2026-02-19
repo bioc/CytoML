@@ -33,10 +33,8 @@ if test -z "${R_HOME}"; then
   exit 1
 fi
 COMPILER=`"${R_HOME}/bin/R" CMD config CC`
-CXX11=`"${R_HOME}/bin/R" CMD config CXX11`
-CXX11STD=`"${R_HOME}/bin/R" CMD config CXX11STD`
-CXX="${CXX11} ${CXX11STD}"
-CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXX11FLAGS`
+CXX=`"${R_HOME}/bin/R" CMD config CXX`
+CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
 AC_LANG(C++)
 
 CC=`"${R_HOME}/bin/R" CMD config CC`
